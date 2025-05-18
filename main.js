@@ -7,7 +7,7 @@
     const name_box = header.querySelector('.name');
     const t1 = gsap.timeline();
     t1.to(name_box,{opacity: 1, duration: 0.5, scale: 2});
-    t1.to(name_box,{duration: 0.5, scale: 1 ,x:-150, y:-150});
+    t1.to(name_box,{duration: 0.5, scale: 1 ,x:'+=-150', y:-150});
 
     // Publisher 글자 애니메이션
     const publisher_box = header.querySelector('.publisher');
@@ -32,5 +32,5 @@
     const portfolio_box = header.querySelector('.portfolio');
     const t3 = gsap.timeline({delay:2});
     t3.to(portfolio_box, {x:-1000, y:100, scale:1.5})
-    t3.to(portfolio_box, { duration:1, opacity:1 ,x:0, ease: "power1.inOut"})  
+    t3.to(portfolio_box, { duration:1, opacity:1 ,x:100, ease: "power1.inOut"})  
 }   
