@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Collapsing</title>
+  </head>
+  <body>
+    margin은 어떤 요소의 바깥에 "공간(여백)"을 만드는 속성입니다.
+
+    <div class="parents" style="width: 300px; height: 300px; background-color: lightgreen">
+      <div class="children" style="width: 100px; height: 100px; background-color: lightgray; margin-top: 50px">
+        margin-top: 50px
+      </div>
+    </div>
+
+    위의 코드는 회색 박스(children)에 margin-top: 50px를 줘서, 초록색 박스(parents) 안에서 위쪽으로 50px 떨어지게 한
+    코드입니다. <br />
+
+    그런데 실제로 보면, 회색 박스가 초록색 박스 안에서 떨어진 게 아니라 **초록색 박스 자체가 위로 50px 내려간 것처럼
+    보입니다.** <br />
+
+    이유는 바로 **마진 겹침(Margin Collapsing)** 때문입니다. <br />
+
+    --- <br />
+
+    ### 📌 마진 겹침이란? <br />
+
+    웹 브라우저는 위쪽(margin-top)이나 아래쪽(margin-bottom)의 여백을 계산할 때, **겹치는 부분을 하나로 합쳐서
+    처리**하려고 합니다. <br />
+
+    이걸 더 쉽게 말하면 이렇습니다: <br />
+
+    1. 회색 박스(children)는 "나는 위쪽으로 50px만큼 떨어질래!"라고 말합니다. <br />
+    2. 초록색 박스(parents)는 "나는 따로 margin-top을 쓰진 않았어!"라고 말합니다. <br />
+    3. 그러자 브라우저는 "음? 부모와 자식이 바로 붙어 있네. 그럼 두 개 따로 계산하지 말고, 가장 바깥쪽에만 여백을
+    주자!"라고 판단합니다. <br />
+    4. 그래서 초록색 박스 자체가 위로부터 50px 떨어진 것처럼 보이게 되는 겁니다. <br />
+
+    --- <br />
+
+    ### 💡 참고로 <br />
+
+    - 이런 마진 겹침은 **오직 위아래 방향(margin-top, margin-bottom)** 에서만 일어납니다. <br />
+    - 좌우(margin-left, margin-right)는 서로 영향을 주지 않아요. <br />
+    - 부모에 `padding`, `border`, 또는 `overflow: hidden` 같은 걸 주면 마진 겹침을 막을 수 있습니다. <br />
+
+    --- <br />
+  </body>
+</html>

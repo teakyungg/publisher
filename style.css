@@ -1,6 +1,11 @@
+@import "./section/header.css";
+@import "./section/intro-message.css";
+@import "./section/frontend-stack.css";
+
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .sr-only {
@@ -17,16 +22,7 @@
 
 @font-face {
   font-family: "SF_HambakSnow";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HakgyoansimPuzzleTTF-Outline";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimPuzzleTTF-Outline.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,73 +31,4 @@ body {
   background: rgb(29, 32, 36);
   color: white;
   margin: 0 auto;
-}
-
-header {
-  background: black;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header .ani-inner {
-  width: 800px;
-  height: 300px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-header .ani-inner .font {
-  font-size: 50px;
-}
-
-header .ani-inner .name,
-header .ani-inner .publisher {
-  font-family: "SF_HambakSnow", sans-serif;
-}
-
-header .ani-inner .portfolio {
-  font-family: "HakgyoansimPuzzleTTF-Outline", sans-serif;
-  opacity: 0;
-}
-
-/* intro-message */
-.intro-message {
-  height: 800px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.intro-message .inner {
-  width: 1200px;
-  box-sizing: border-box;
-  border-bottom: 1px solid white;
-  padding-bottom: 50px;
-}
-
-.intro-message .hr-line {
-  margin: 15px 0;
-}
-
-.intro-message .txt {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
-  font-size: 16px;
-  margin-top: 50px;
-}
-
-.intro-message .slogan-text {
-  font-size: 45px;
-  font-family: "SF_HambakSnow", sans-serif;
-
-  margin-top: 80px;
 }

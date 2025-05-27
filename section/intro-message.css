@@ -1,0 +1,42 @@
+.intro-message {
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-message .intro-title {
+  display: inline-block;
+}
+
+.intro-message .inner {
+  width: 1200px;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
+}
+
+.intro-message .hr-line {
+  margin: 15px 0;
+}
+
+.intro-message .intro-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.intro-message .slogan {
+  font-size: 45px;
+  font-family: "SF_HambakSnow", sans-serif;
+
+  margin-top: 80px;
+}
+
+.intro-message .slogan-txt {
+  display: inline-block;
+}

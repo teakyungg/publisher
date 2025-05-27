@@ -3,67 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="./main.js" defer></script>
+    <script type="module" src="./main.js"></script>
     <title>publisher</title>
   </head>
   <body>
+    <!-- 헤더 -->
     <header>
       <h1 class="sr-only">Title</h1>
 
-      <section>
-        <div class="ani-inner">
-          <p class="name font">Kim TeakYung Kyung</p>
-          <p class="publisher font"></p>
-          <p class="portfolio font">Portfolio</p>
+      <p class="name">KTK</p>
+
+      <section class="inner">
+        <div class="title">
+          <p class="publisher"></p>
+          <p class="portfolio">Portfolio</p>
         </div>
       </section>
     </header>
 
-    <div class="intro-message">
+    <!-- 목표 -->
+    <section class="intro-message">
       <h1 class="sr-only">studyGoal</h1>
 
-      <section class="inner">
-        <h2>목표</h2>
+      <div class="inner">
+        <h2 class="intro-title">목표</h2>
         <hr class="hr-line" />
 
-        <div class="txt">
-          <p>
-            저는 항상 다양한 웹페이지에 관심을 가져왔고, 직접 여러 웹 프로젝트를
-            만들며 실력을 키워왔습니다.
-          </p>
+        <div class="intro-txt">
+          <p>저는 항상 다양한 웹페이지에 관심을 가져왔고, 직접 여러 웹 프로젝트를 만들며 실력을 키워왔습니다.</p>
 
           <p>
-            단순히 퍼블리셔 역할에 머무르지 않고, 현재는 Node.js를 활용한
-            프론트엔드 개발에도 도전하며 기술의 폭을 넓혀가고 있습니다. 지속적인
-            학습과 실전 경험을 통해, <br />
+            단순히 퍼블리셔 역할에 머무르지 않고, 현재는 Node.js를 활용한 프론트엔드 개발에도 도전하며 기술의 폭을
+            넓혀가고 있습니다. 지속적인 학습과 실전 경험을 통해, <br />
             더 나은 사용자 경험을 제공하는 웹 개발자를 목표로 성장하고 있습니다.
           </p>
         </div>
 
-        <div class="slogan-text">
-          <p>Trying, Learning, Growing</p>
+        <div class="slogan">
+          <span class="slogan-txt">Trying</span>
+          <span class="slogan-txt">Learning</span>
+          <span class="slogan-txt">Growing</span>
+
+          <!-- 여기에 각각 애니메이션 추가하기 -->
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <div>사용가능한 언어 , 써본 라이브러리 , 관리 도구</div>
+    <!-- 기술 스택 -->
+    <!-- 여기 디자인 하기 -->
+    <section class="frontend-stack">
+      <h1>기술 스택</h1>
 
-    <div>
-      여기에 스와이퍼로 내가 만든 페이지 이미지 보이게 하기 웹 페이지에 대한
-      설명 간단히 쓰기
-    </div>
+      <div>
+        <h2>Core</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>css</li>
+          <li>JavaScript (ES6+)</li>
+        </ul>
+      </div>
 
-    <div>
-      코드 리뷰 작업시 발견한 문제점 해결 방식 (웹 페이지 이동 방식으로 쓰기)
-    </div>
+      <div>
+        <h2>Preprocessor & Transpiler</h2>
+        <ul>
+          <li>TypeScript</li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Build & Workflow</h2>
+        <ul>
+          <li>Vite</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Version Control & Deployment</h2>
+        <ul>
+          <li>Git , GitHub</li>
+          <li>Netlify</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Library</h2>
+        <ul>
+          <li>GSAP</li>
+          <li>Swiper</li>
+        </ul>
+      </div>
+    </section>
+
+    위에꺼 택스트 말고 이모지나 그림으로 표시하면 한눈에 들어오지 않을까?
+
+    <div>여기에 스와이퍼로 내가 만든 페이지 이미지 보이게 하기 웹 페이지에 대한 설명 간단히 쓰기</div>
+
+    <div>코드 리뷰 작업시 발견한 문제점 해결 방식 (웹 페이지 이동 방식으로 쓰기)</div>
 
     <div>프로필 넣기 전번 이메일 같은것</div>
 
-    <div>
-      여기에 클릭시 특정 스크롤 위치로 바로 이동하는거 만들기 고정형으로 만들기
-    </div>
+    <div>여기에 클릭시 특정 스크롤 위치로 바로 이동하는거 만들기 고정형으로 만들기</div>
   </body>
 </html>

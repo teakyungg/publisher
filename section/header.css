@@ -1,0 +1,39 @@
+header {
+  background: black;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+header > .name {
+  position: absolute;
+  top: 1.875rem;
+  left: 1.875rem;
+
+  font-size: 1.875rem;
+  font-family: "SF_HambakSnow", sans-serif;
+}
+
+header .title {
+  width: 50rem;
+  height: 18.75rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .title .publisher {
+  font-family: "SF_HambakSnow", sans-serif;
+}
+
+header .title .portfolio {
+  font-family: "SF_HambakSnow", sans-serif;
+  font-size: 5rem;
+  opacity: 0;
+}
