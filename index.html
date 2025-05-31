@@ -7,6 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="./main.js"></script>
     <title>publisher</title>
@@ -52,53 +56,25 @@
       </div>
     </section>
 
-    <!-- 기술 스택 -->
-    <!-- 여기 디자인 하기 -->
-    <section class="frontend-stack">
-      <h1>기술 스택</h1>
+    <!-- 전체 기술 스택을  쓰지 말고 내가 만든 작업물에만 간단히 표시를 하는게 좋을거 같다 -->
+    <!-- 왜냐하면 전체 기술 스택은 이력서에 써져 있을테니까 -->
 
-      <div>
-        <h2>Core</h2>
-        <ul>
-          <li>HTML5</li>
-          <li>css</li>
-          <li>JavaScript (ES6+)</li>
-        </ul>
+    <!-- Slider main container -->
+    <div class="swiper" style="width: 600px; height: 300px">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-      <div>
-        <h2>Preprocessor & Transpiler</h2>
-        <ul>
-          <li>TypeScript</li>
-          <li></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Build & Workflow</h2>
-        <ul>
-          <li>Vite</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Version Control & Deployment</h2>
-        <ul>
-          <li>Git , GitHub</li>
-          <li>Netlify</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Library</h2>
-        <ul>
-          <li>GSAP</li>
-          <li>Swiper</li>
-        </ul>
-      </div>
-    </section>
-
-    위에꺼 택스트 말고 이모지나 그림으로 표시하면 한눈에 들어오지 않을까?
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 
     <div>여기에 스와이퍼로 내가 만든 페이지 이미지 보이게 하기 웹 페이지에 대한 설명 간단히 쓰기</div>
 
