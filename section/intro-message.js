@@ -18,10 +18,6 @@
         onEnter: () => {
           sloganAni();
         },
-
-        onLeaveBack: () => {
-          sloganAni();
-        },
       },
     });
   });
@@ -55,6 +51,7 @@
 
   // 딜레이 컨트롤
   function setDelay() {
+    delay = true;
     setTimeout(() => {
       delay = false;
     }, 1500);

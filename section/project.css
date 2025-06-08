@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "JSArirang-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mungyeong-Gamhong-Apple";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Mungyeong-Gamhong-Apple.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HSSummer";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSSummer.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.project {
+  width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
+
+  transform: translateY(-20px);
+}
+
+.project > .title {
+  font-size: 24px;
+  transform: translateY(-30px);
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid white;
+}
+
+.project > .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.project > .inner > .list {
+  display: flex;
+  gap: 20px;
+
+  width: 100%;
+  height: 500px;
+  transition: transform 0.5s;
+}
+
+.project > .inner > .list:hover {
+  transform: scale(1.05);
+}
+
+.project > .inner > .right {
+  flex-direction: row-reverse;
+}
+
+.project > .inner > .list > .img {
+  height: 100%;
+  flex: 1;
+
+  box-sizing: border-box;
+}
+
+.project > .inner > .list > .txt {
+  flex: 1.7;
+}
+
+.project > .inner > .list > .info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  flex: 1;
+}
+
+.project > .inner > .list > .info > .title {
+  font-size: 5rem;
+}
+
+.project > .inner > .list > .info > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 1.0625rem;
+}
+
+.project > .inner > .list > .info > .tag {
+  display: flex;
+  gap: 10px;
+}
+
+.project > .inner > .list > .info > .tag > span {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 18px;
+
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.project > .inner > .list > .info > .tag > span:hover {
+  background-color: white;
+  color: black;
+}

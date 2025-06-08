@@ -1,6 +1,6 @@
 @import "./section/header.css";
 @import "./section/intro-message.css";
-@import "./section/frontend-stack.css";
+@import "./section/project.css";
 
 * {
   margin: 0;
