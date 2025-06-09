@@ -9,15 +9,12 @@
   let delay = false;
 
   window.addEventListener("load", () => {
-    gsap.to(intro, {
-      scrollTrigger: {
-        trigger: intro,
-        start: "top 50%",
-        // marks: true,
-
-        onEnter: () => {
-          sloganAni();
-        },
+    ScrollTrigger.create({
+      trigger: intro,
+      start: "top 50%",
+      once: true,
+      onEnter: () => {
+        sloganAni();
       },
     });
   });

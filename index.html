@@ -16,6 +16,9 @@
     <title>publisher</title>
   </head>
   <body>
+    <!-- 네비게이션  -->
+    <nav>하단 네비게이션 구현하기 https://leehh0203.github.io/portfolio_2024/ 여기꺼 참고해서 만들기</nav>
+
     <!-- 헤더 -->
     <header>
       <h1 class="sr-only">Title</h1>
@@ -58,16 +61,15 @@
 
     <!-- 프로젝트 -->
     <section class="project">
-      <h1 class="title">Project</h1>
+      <h1 class="title">PROJECT</h1>
 
       <div class="inner">
         <!-- 스타벅스 -->
-        <div class="list">
+        <div class="list starbucks">
           <figure class="img">
             <figcaption class="sr-only">스타벅스 클론</figcaption>
-            <a
+            <div
               class="main-img"
-              href="https://startbycks-teaktung.netlify.app/"
               style="
                 display: inline-block;
                 width: 40rem;
@@ -78,25 +80,36 @@
                 background-repeat: no-repeat;
                 border-radius: 1rem;
               "
-            ></a>
+            ></div>
           </figure>
 
           <div class="info">
+            <!-- 제목 -->
             <h2
               class="title"
               style="color: rgb(0, 112, 74); font-family: 'Mungyeong-Gamhong-Apple', sans-serif; font-size: 4.0625rem"
             >
               STARBUCKS
             </h2>
+
+            <!-- 설명  -->
             <section class="content">
               <p>
                 개인 프로젝트로 GSAP와 Swiper를 활용해 스타벅스 공식 페이지를 최대한 재현한 반응형 웹페이지를
                 제작했습니다.
               </p>
             </section>
+
+            <!-- 관련 태그 -->
             <section class="tag">
               <span>GASP</span><span>Swiper</span><span>JavaScript</span><span>개인 프로젝트</span>
             </section>
+
+            <!-- 바로가기 -->
+            <a href="https://startbycks-teaktung.netlify.app/" class="link">
+              <!-- <span>GO</span> <span>TO</span> -->
+              <span class="startbucks_txt">GO TO STARBUCKS</span>
+            </a>
           </div>
         </div>
 
@@ -135,7 +148,7 @@
             <figcaption class="sr-only">karly 클론</figcaption>
             <a
               class="main-img"
-              href="https://vision-karly.netlify.app/src/item/item-list"
+              href="https://vision-karly.netlify.app/src/item/main"
               style="
                 display: inline-block;
                 width: 40rem;
