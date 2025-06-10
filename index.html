@@ -66,21 +66,9 @@
       <div class="inner">
         <!-- 스타벅스 -->
         <div class="list starbucks">
-          <figure class="img">
+          <figure class="img" style="position: relative; perspective: 2000px">
             <figcaption class="sr-only">스타벅스 클론</figcaption>
-            <div
-              class="main-img"
-              style="
-                display: inline-block;
-                width: 40rem;
-                height: 31.25rem;
-                background-image: url(./img/starbucks.png);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 1rem;
-              "
-            ></div>
+            <img src="./img/monitor.png" alt="monitor" style="width: 34.375rem; aspect-ratio: 23/27" />
           </figure>
 
           <div class="info">
@@ -92,58 +80,65 @@
               STARBUCKS
             </h2>
 
-            <!-- 설명  -->
-            <section class="content">
-              <p>
-                개인 프로젝트로 GSAP와 Swiper를 활용해 스타벅스 공식 페이지를 최대한 재현한 반응형 웹페이지를
-                제작했습니다.
-              </p>
-            </section>
-
             <!-- 관련 태그 -->
             <section class="tag">
               <span>GASP</span><span>Swiper</span><span>JavaScript</span><span>개인 프로젝트</span>
             </section>
 
             <!-- 바로가기 -->
-            <a href="https://startbycks-teaktung.netlify.app/" class="link">
-              <!-- <span>GO</span> <span>TO</span> -->
+            <a
+              href="https://startbycks-teaktung.netlify.app/"
+              class="link"
+              style="background-color: rgb(0, 112, 74); color: white; font-family: Mungyeong-Gamhong-Apple, sans-serif"
+            >
               <span class="startbucks_txt">GO TO STARBUCKS</span>
             </a>
           </div>
         </div>
 
         <!-- 2048 -->
-        <div class="list right">
+        <div class="list right game_2048">
           <figure class="img">
             <figcaption class="sr-only">2048 게임</figcaption>
-            <a
+            <div
               class="main-img"
-              href="https://3lines-2048.netlify.app/"
               style="
                 display: inline-block;
                 width: 40rem;
                 height: 31.25rem;
                 background-image: url(./img/2048.png);
                 background-position: center;
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 border-radius: 1rem;
               "
-            ></a>
+            ></div>
           </figure>
 
           <div class="info">
-            <h2 class="title" style="color: rgb(168, 168, 168); font-family: 'HSSummer', sans-serif">2048</h2>
-            <section class="content">
-              <p>팀 프로젝트로 자바스크립트와 DOM API를 학습하며 모바일 지원 반응형 웹페이지를 구현했습니다.</p>
-            </section>
+            <h2 class="title" style="color: rgb(168, 168, 168); font-family: 'HSSummer', sans-serif; height: 6.25rem">
+              2048
+            </h2>
             <section class="tag"><span>JavaScript</span><span>팀 프로젝트</span></section>
+
+            <!-- 바로가기 -->
+            <a
+              href="https://3lines-2048.netlify.app/"
+              class="link"
+              style="
+                background-color: rgb(168, 168, 168);
+                color: #2c3e50;
+                font-family: 'HSSummer', sans-serif;
+                font-size: 2.8125rem;
+              "
+            >
+              <span class="2048_txt" style="margin-top: 1.875rem">GO TO 2048</span>
+            </a>
           </div>
         </div>
 
         <!-- karly -->
-        <div class="list">
+        <div class="list karly">
           <figure class="img">
             <figcaption class="sr-only">karly 클론</figcaption>
             <a
@@ -164,18 +159,27 @@
 
           <div class="info">
             <h2 class="title" style="color: rgb(95, 0, 128); font-family: 'JSArirang-Regular', sans-serif">Karly</h2>
-            <section class="content">
-              <p>
-                HTML/CSS로 Karly 홈페이지를 재해석해 반응형 웹페이지를 제작하고, 시멘틱 태그로 SEO 최적화 마크업을
-                적용했으며, 원본의 반응형 문제를 개선해 다양한 환경을 지원하도록 구현했습니다.
-              </p>
-            </section>
             <section class="tag"><span>JavaScript</span><span>팀 프로젝트</span><span>SEO</span></section>
+
+            <!-- 바로가기 -->
+            <a
+              href="https://startbycks-teaktung.netlify.app/"
+              class="link"
+              style="
+                background-color: rgb(95, 0, 128);
+                color: white;
+                font-family: 'JSArirang-Regular', sans-serif;
+                font-size: 35px;
+              "
+            >
+              <span class="startbucks_txt">GO TO Karly</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 일단 이미지는 나중에 고민하고 먼저 다른거 작업하는거 먼저일듯 -->
     <!-- 전체 기술 스택을  쓰지 말고 내가 만든 작업물에만 간단히 표시를 하는게 좋을거 같다 -->
     <!-- 왜냐하면 전체 기술 스택은 이력서에 써져 있을테니까 -->
 

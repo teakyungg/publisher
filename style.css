@@ -32,4 +32,6 @@ body {
   background: rgb(29, 32, 36);
   color: white;
   margin: 0 auto;
+
+  padding-bottom: 6.25rem;
 }

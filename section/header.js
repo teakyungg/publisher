@@ -12,7 +12,7 @@
     p.forEach((item) => {
       const span = document.createElement("span");
       span.textContent = item;
-      span.style.fontSize = "100px";
+      span.style.fontSize = "6.25rem";
       span.style.display = "inline-block";
       span.style.opacity = 0;
       publisher_box.appendChild(span);
