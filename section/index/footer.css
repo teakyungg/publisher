@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+}
+
+footer > .inner {
+  margin: auto;
+  width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  border-top: 1px solid white;
+}
+
+footer > .inner > .title {
+  font-size: 3.125rem;
+}
+
+footer .name,
+footer .phone,
+footer .email {
+  font-size: 1.875rem;
+  font-weight: 500;
+}

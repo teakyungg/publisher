@@ -2,6 +2,7 @@
 @import "./section/index/intro-message.css";
 @import "./section/index/project.css";
 @import "./section/index/navigation.css";
+@import "./section/index/footer.css";
 
 * {
   margin: 0;
