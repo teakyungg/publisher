@@ -19,9 +19,21 @@ footer > .inner > .title {
   font-size: 3.125rem;
 }
 
-footer .name,
-footer .phone,
-footer .email {
+footer .name {
   font-size: 1.875rem;
   font-weight: 500;
+  margin-bottom: 0.625rem;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+
+footer .phone,
+footer .email,
+footer .github {
+  font-size: 1.25rem;
+  font-weight: 31.25rem;
 }

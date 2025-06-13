@@ -66,6 +66,55 @@
   box-sizing: border-box;
 }
 
+/* 프로젝트 메인 이미지 */
+.project > .inner > .list .project-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40rem;
+  height: 31.25rem;
+  border-radius: 1rem;
+}
+
+/* 메인 이미지 링크 박스 */
+.project > .inner > .list .project-img .add-link {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+
+  transition: opacity 0.5s;
+}
+
+/* 이 부분 gsap써서 올라가는 형식으로 만들까 */
+.project > .inner > .list:hover .project-img .add-link {
+  opacity: 1;
+}
+
+/* 메인 이미지 링크 */
+.project > .inner > .list .project-img .add-link span,
+.project > .inner > .list .project-img .add-link a {
+  color: white;
+  text-decoration: none;
+  border: 0.0625rem solid white;
+  padding: 0.9375rem;
+  margin: 0.3125rem;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+/* 메인 이미지 링크 hover */
+.project > .inner > .list .project-img span:hover,
+.project > .inner > .list .project-img a:hover {
+  color: rgb(29, 32, 36);
+  background-color: white;
+}
+
 .project > .inner > .list > .txt {
   flex: 1.7;
 }
