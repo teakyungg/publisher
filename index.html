@@ -6,10 +6,16 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="./style.css" />
@@ -17,6 +23,78 @@
     <title>publisher</title>
   </head>
   <body>
+    
+    <div class="add-box">
+
+      <div class="content">
+
+        <!-- Exit-button -->
+        <div class="exit-button">
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </div>
+
+        <!-- Title -->
+        <section class="title-inner">
+          <h3 class="title">STARBUKCS</h3>
+          <span>1인 프로젝트</span>
+        </section>
+
+        <!-- 목표 -->
+        <section class="inner">
+          <h3 class="sub-title">목표</h3>
+          <p>
+            실제 스타벅스 홈페이지 수준에 근접한 결과물을 목표로 해당 프로젝트를
+            기획하고 진행하였습니다.
+          </p>
+        </section>
+
+        <!-- 주요 기능 및 특징 -->
+        <section class="inner">
+          <h3 class="sub-title">주요 기능 및 특징</h3>
+          <ul class="list">
+            <li>swpier를 이용한 슬라이더 구현</li>
+            <li>JavaScript를 이용한 동적 사이트</li>
+            <li>GSAP의 scrollTrigger를 기능을 사용한 반응형 웹 사이트</li>
+            <li>
+              사용자 환경에 따라 유연하게 반응할 수 있도록 rem 단위를 사용하여
+              다양한 화면 크기를 고려한 레이아웃을 구성하였습니다.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 사용 기술 -->
+        <section class="inner">
+          <h3 class="sub-title">사용 기술</h3>
+
+          <details>
+            <summary><span>➡️</span> vite</summary>
+            <p>
+              개발 생산성과 성능 향상을 위해 Vite를 활용하여 실시간 반영 기능을
+              적용하고, 최종 빌드 시 경량화 및 최적화를 수행하였습니다.
+            </p>
+          </details>
+
+          <details>
+            <summary><span>➡️</span> GSAP</summary>
+            <p>
+              GSAP ScrollTrigger 기능을 활용하여 특정 스크롤 구간에 맞춰
+              애니메이션을 트리거하도록 구성하였습니다.
+            </p>
+          </details>
+
+          <details>
+            <summary><span>➡️</span> Swiper</summary>
+            <p>
+              사용자 친화적인 슬라이더 인터페이스 구현을 위해 Swiper 라이브러리를
+              도입하여 효과적인 콘텐츠 전환을 구현하였습니다.
+            </p>
+          </details>
+        </section>
+      </div>
+
+      
+    </div>
+
     <!-- 네비게이션  -->
     <nav>
       <ul class="inner">
@@ -50,11 +128,15 @@
         <hr class="hr-line" />
 
         <div class="intro-txt">
-          <p>저는 항상 다양한 웹페이지에 관심을 가져왔고, 직접 여러 웹 프로젝트를 만들며 실력을 키워왔습니다.</p>
+          <p>
+            저는 항상 다양한 웹페이지에 관심을 가져왔고, 직접 여러 웹 프로젝트를
+            만들며 실력을 키워왔습니다.
+          </p>
 
           <p>
-            단순히 퍼블리셔 역할에 머무르지 않고, 현재는 Node.js를 활용한 프론트엔드 개발에도 도전하며 기술의 폭을
-            넓혀가고 있습니다. 지속적인 학습과 실전 경험을 통해, <br />
+            단순히 퍼블리셔 역할에 머무르지 않고, 현재는 Node.js를 활용한
+            프론트엔드 개발에도 도전하며 기술의 폭을 넓혀가고 있습니다. 지속적인
+            학습과 실전 경험을 통해, <br />
             더 나은 사용자 경험을 제공하는 웹 개발자를 목표로 성장하고 있습니다.
           </p>
         </div>
@@ -75,14 +157,19 @@
         <!-- 스타벅스 -->
         <div class="list starbucks">
           <figure class="img">
+            <h2 class="sr-only">STARBUCSK img</h2>
             <figcaption class="sr-only">스타벅스 클론</figcaption>
-            <div class="project-img" style="background-image: url(./img/starbucks.png)">
-              <div class="add-link">
-                <span>자세히 보기</span>
-                <a href="https://github.com/teakyungg/Starbucks">GitHub 바로가기</a>
-              </div>
 
-              <div class="add-box">자세한 내용창</div>
+            <div
+              class="project-img"
+              style="background-image: url(./img/starbucks.png)"
+            >
+              <div class="add-link">
+                <span class="add-button">자세히 보기</span>
+                <a href="https://github.com/teakyungg/Starbucks"
+                  >GitHub 바로가기</a
+                >
+              </div>
             </div>
           </figure>
 
@@ -90,21 +177,30 @@
             <!-- 제목 -->
             <h2
               class="title"
-              style="color: rgb(0, 112, 74); font-family: 'Mungyeong-Gamhong-Apple', sans-serif; font-size: 4.0625rem"
+              style="
+                color: rgb(0, 112, 74);
+                font-family: 'Mungyeong-Gamhong-Apple', sans-serif;
+                font-size: 4.0625rem;
+              "
             >
               STARBUCKS
             </h2>
 
             <!-- 관련 태그 -->
             <section class="tag">
-              <span>GASP</span><span>Swiper</span><span>JavaScript</span><span>개인 프로젝트</span>
+              <span>GASP</span><span>Swiper</span><span>JavaScript</span
+              ><span>개인 프로젝트</span>
             </section>
 
             <!-- 바로가기 -->
             <a
               href="https://startbycks-teaktung.netlify.app/"
               class="link"
-              style="background-color: rgb(0, 112, 74); color: white; font-family: Mungyeong-Gamhong-Apple, sans-serif"
+              style="
+                background-color: rgb(0, 112, 74);
+                color: white;
+                font-family: Mungyeong-Gamhong-Apple, sans-serif;
+              "
             >
               <span class="startbucks_txt">GO TO STARBUCKS</span>
             </a>
@@ -115,19 +211,33 @@
         <div class="list right game_2048">
           <figure class="img">
             <figcaption class="sr-only">2048 게임</figcaption>
-            <div class="project-img" style="background-image: url(./img/game_2048.png)">
+            <div
+              class="project-img"
+              style="background-image: url(./img/game_2048.png)"
+            >
               <div class="add-link">
                 <span>자세히 보기</span>
-                <a href="https://github.com/teakyungg/JS-03-2048-in-3lines">GitHub 바로가기</a>
+                <a href="https://github.com/teakyungg/JS-03-2048-in-3lines"
+                  >GitHub 바로가기</a
+                >
               </div>
             </div>
           </figure>
 
           <div class="info">
-            <h2 class="title" style="color: rgb(168, 168, 168); font-family: 'HSSummer', sans-serif; height: 6.25rem">
+            <h2
+              class="title"
+              style="
+                color: rgb(168, 168, 168);
+                font-family: 'HSSummer', sans-serif;
+                height: 6.25rem;
+              "
+            >
               2048
             </h2>
-            <section class="tag"><span>JavaScript</span><span>팀 프로젝트</span></section>
+            <section class="tag">
+              <span>JavaScript</span><span>팀 프로젝트</span>
+            </section>
 
             <!-- 바로가기 -->
             <a
@@ -140,7 +250,9 @@
                 font-size: 2.8125rem;
               "
             >
-              <span class="2048_txt" style="margin-top: 1.875rem">GO TO 2048</span>
+              <span class="2048_txt" style="margin-top: 1.875rem"
+                >GO TO 2048</span
+              >
             </a>
           </div>
         </div>
@@ -149,17 +261,32 @@
         <div class="list karly">
           <figure class="img">
             <figcaption class="sr-only">karly 클론</figcaption>
-            <div class="project-img" style="background-image: url(./img/starbucks.png)">
+            <div
+              class="project-img"
+              style="background-image: url(./img/starbucks.png)"
+            >
               <div class="add-link">
                 <span>자세히 보기</span>
-                <a href="https://github.com/teakyungg/Vision">GitHub 바로가기</a>
+                <a href="https://github.com/teakyungg/Vision"
+                  >GitHub 바로가기</a
+                >
               </div>
             </div>
           </figure>
 
           <div class="info">
-            <h2 class="title" style="color: rgb(95, 0, 128); font-family: 'JSArirang-Regular', sans-serif">Karly</h2>
-            <section class="tag"><span>JavaScript</span><span>팀 프로젝트</span><span>SEO</span></section>
+            <h2
+              class="title"
+              style="
+                color: rgb(95, 0, 128);
+                font-family: 'JSArirang-Regular', sans-serif;
+              "
+            >
+              Karly
+            </h2>
+            <section class="tag">
+              <span>JavaScript</span><span>팀 프로젝트</span><span>SEO</span>
+            </section>
 
             <!-- 바로가기 -->
             <a
@@ -193,6 +320,5 @@
       </div>
     </footer>
 
-    <!-- https://jieun-portfolio.vercel.app/ 여기 참고 해서 각각 페이지에 대한 내용 써두기 -->
   </body>
 </html>
