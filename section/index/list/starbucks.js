@@ -32,11 +32,11 @@ function aniEnd() {
 
 /* 자세히 보기 부분 */
 
-// [자세히 보기 버튼]
+// [자세히 보기 버튼] - 여기 수정
 const add_button = document.querySelector(".project > .inner > .starbucks .add-button");
 
-// [추가 정보 박스]
-const add_link = document.querySelector(".add-box");
+// [추가 정보 박스] - 여기 수정
+const add_link = document.querySelector(".starbucks-add-box");
 const nav = document.querySelector("nav");
 const exit_button = add_link.querySelector(".content > .exit-button");
 
