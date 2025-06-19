@@ -217,8 +217,16 @@
 
 .add-box .sub-title {
   font-size: 1.5625rem;
-  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .625rem;
 }
+
+.add-box .sub-title .info-message{
+  font-size: 1rem;
+}
+
+
 
 .add-box .inner {
   width: 80%;
