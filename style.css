@@ -1,8 +1,8 @@
-@import "./section/index/header.css";
-@import "./section/index/intro-message.css";
-@import "./section/index/project.css";
-@import "./section/index/navigation.css";
-@import "./section/index/footer.css";
+@import "./pages/index/header/header.css";
+@import "./pages/index/intro/intro-message.css";
+@import "./pages/index/project/project.css";
+@import "./pages/index/nav/navigation.css";
+@import "./pages/index/footer/footer.css";
 
 * {
   margin: 0;
