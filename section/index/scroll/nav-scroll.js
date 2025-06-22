@@ -1,5 +1,5 @@
 let button = document.querySelectorAll("nav > .inner > li");
-const scrollPostion = [800, 1400, 3500, 0];
+const scrollPostion = [800, 1250, 3500, 0];
 
 button = Array.from(button);
 button.map((item, index) => {

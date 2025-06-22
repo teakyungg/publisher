@@ -175,7 +175,10 @@
   overflow: auto;
   display: none;
 
-  position: absolute; 
+  position: fixed;
+  top: 50%;
+  left: 50% ;
+  transform: translate(-50%,-50%);
   z-index: 10;
 
   /* 스크롤바 눈에 제거 부분(기능은 활성화) */
@@ -260,6 +263,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.add-box > .content > .inner > details > p{
+  padding: .625rem 0;
+}
+
+.add-box > .content > .inner > details > summary{
+  background-color: lightgray;
+  margin: .3125rem 0;
 }
 
 

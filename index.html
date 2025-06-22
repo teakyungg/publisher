@@ -11,13 +11,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./main.js"></script>
     <title>publisher</title>
@@ -98,6 +91,45 @@
 
         </section>
 
+         <!-- 프로젝트 회고 -->
+        <section class="inner">
+          <h3 class="sub-title">프로젝트 회고</h3>
+
+          <details>
+            <summary><span>➡️</span> Swpier</summary>
+            <p> 
+            개인 프로젝트를 진행하던 중 캐러셀(Carousel) 기능이 필요한 부분이 있었고, 직접 구현하는 대신 더 효율적인 방법을 찾던 중 <br>
+            JavaScript 기반의 라이브러리인 Swiper를 알게 되어 도입하게 되었습니다. <br>
+            Swiper를 통해 캐러셀 기능을 손쉽게 구현할 수 있었고, 이를 통해 개발 시간을 크게 단축할 수 있었습니다. <br><br>
+
+            다만, 라이브러리를 사용할 때는 단순히 사용하는 것에 그치지 않고, <br>
+            해당 라이브러리가 어떻게 동작하는지 구조를 이해해야만 원하는 방식으로 수정하거나 확장할 수 있다는 점도 함께 깨달았습니다. <br><br>
+
+            이 경험을 통해 <strong>라이브러리의 편의성과 함께 구조에 대한 이해</strong>의 중요성을 깊이 느낄 수 있었습니다.
+
+            </p>
+          </details>
+
+          <details>
+            <summary><span>➡️</span> GSAP</summary>
+            <p> 
+             개인 프로젝트를 진행하면서 여러 애니메이션이 필요한 부분이 있었고, <br>
+             이를 모두 직접 구현하는 것은 비효율적이라 판단해 대안을 찾던 중 <strong>GSAP(GreenSock Animation Platform)</strong><br>
+             JavaScript 애니메이션 라이브러리를 발견하게 되었습니다. <br><br>
+
+             GSAP는 복잡한 애니메이션을 간단한 코드로 구현할 수 있을 뿐만 아니라, <br>
+             다양한 확장 플러그인을 통해 추가적인 기능도 손쉽게 적용할 수 있다는 점에서 큰 장점을 느꼈습니다. <br><br>
+
+             무엇보다 필요한 기능만 선택적으로 플러그인으로 불러올 수 있는 구조는 성능 최적화에도 도움이 될 수 있겠다는 점에서 인상 깊었습니다. <br>
+             이 경험을 통해 효율적인 개발과 최적화를 동시에 고려할 수 있는 라이브러리 선택의 중요성을 느낄 수 있었습니다.
+
+
+            </p>
+          </details>
+
+
+        </section>
+
         
       </div> 
     </div>
@@ -164,6 +196,34 @@
           </details>
 
         </section>
+
+        <!-- 프로젝트 회고 -->
+        <section class="inner">
+          <h3 class="sub-title">프로젝트 회고</h3>
+
+          <details>
+            <summary><span>➡️</span> 공용 함수 제작</summary>
+            <p> 
+             팀 프로젝트를 진행하면서 역할을 나누어 작업했지만, 완료 후 확인해보니 유사한 기능의 함수들을 각자 따로 구현한 중복이 발생했습니다. <br>
+             작업에 들어가기 전, 보다 구체적인 회의를 통해 <strong>공통 함수들을 먼저 설계하고 공유</strong>하고 공유했더라면, <br>
+             중복 없이 더 효율적인 개발이 가능했을 것이라 생각했습니다. <br><br>
+
+             프로젝트를 통해 작업 전 충분한 논의와 설계 과정을 거치는 것이 개발 효율성과 완성도에 있어 매우 중요하다는 점을 깨달았습니다.
+            </p>
+          </details>
+
+          <details>
+            <summary><span>➡️</span> GitHub Merge</summary>
+            <p> 
+             팀 프로젝트 진행 중 GitHub에서 머지를 수행하던 중 충돌이 발생했고, <br>
+             이를 충분히 확인하지 않은 채 병합을 진행해 제가 작업한 일부 내용이 유실되는 경험을 했습니다. <br><br>
+
+            이 경험을 통해 <strong>Merge 충돌 시 변경 사항을 정확히 확인</strong>하고 신중하게 처리하는 것의 중요성을 깊이 느꼈습니다.
+            </p>
+          </details>
+
+        </section>
+
       </div> 
     </div>
 
@@ -198,6 +258,7 @@
             <li>디바이스 해상도에 따라 UI가 동적으로 조정되어 일관된 사용자 경험을 제공하도록 설계하였습니다.</li>
             <li>모바일 환경에서도 원활하게 작동하도록 반응형으로 설계하였습니다.</li>
             <li>사용자 환경에 따라 유연하게 반응할 수 있도록 rem 단위를 사용하여 다양한 화면 크기를 고려한 레이아웃을 구성하였습니다.</li>
+            <li>UI 요소를 컴포넌트화하여 역할을 명확히 분담하고, 작업 충돌 없이 효율적인 협업을 구현하였습니다.</li>
           </ul>
         </section>
 
@@ -238,6 +299,45 @@
             <p>Web Developer의 HTML 유효성 검사 기능을 사용하여, 마크업 구조를 웹 표준에 맞게 구성하였습니다.</p>
           </details>
 
+          
+
+        </section>
+
+        <!-- 프로젝트 회고 -->
+        <section class="inner">
+          <h3 class="sub-title">프로젝트 회고</h3>
+
+          <details>
+            <summary><span>➡️</span> Git Commit</summary>
+            <p> 
+              팀 프로젝트를 진행하면서 커밋 메시지에 한글과 영어가 혼용되어 사용되어 통일성이 부족했고, <br>
+              이로 인해 각 커밋의 내용을 명확히 파악하기 어려운 점이 있었습니다. <br><br>
+              커밋 메시지 작성 규칙 및 <strong>통일성</strong>의 중요성을 느끼는 계기가 되었습니다. 
+            </p>
+          </details>
+
+          <details>
+            <summary><span>➡️</span> 공용 color CSS 작성</summary>
+            <p> 
+              프로젝트 진행 시 공통으로 사용하는 색상을 일일이 찾아 직접 입력하는 비효율적인 작업이 있었습니다. <br><br>
+              이를 개선하기 위해 공통 색상을 :root에 CSS 변수로 선언한 별도의 CSS 파일을 생성하고, <br>
+              이를 다른 CSS에서 <strong>@import하여</strong> 사용하는 방식을 선택했다면 보다 효율적인 작업이 가능했을 것이라 생각했습니다.
+            </p>
+          </details>
+
+
+          <details>
+            <summary><span>➡️</span> Tailwind CSS 편의성</summary>
+            <p> 
+              Tailwind CSS를 사용하면서 가장 인상 깊었던 점은 직관적이고 일관된 클래스 네이밍이었습니다. <br>
+              정해진 규칙에 따라 요소별로 명확한 기준을 적용할 수 있어, 스타일 작업의 혼란을 줄이고 개발 시간을 단축하는 데 큰 도움이 되었습니다. <br><br>
+
+              이 과정을 통해 Tailwind CSS의 높은 편의성을 체감할 수 있었으며, <br>
+              변수명이나 커밋 메시지 등 모든 이름을 <strong>직관적이고 일관되게 작성하는 것</strong>의 중요성도 함께 느낄 수 있었습니다.
+            </p>
+          </details>
+
+          
           
 
         </section>
@@ -316,7 +416,7 @@
             >
               <div class="add-link">
                 <span class="add-button">자세히 보기</span>
-                <a href="https://github.com/teakyungg/Starbucks"
+                <a href="https://github.com/teakyungg/Starbucks" target="_blank"
                   >GitHub 바로가기</a
                 >
               </div>
@@ -346,6 +446,7 @@
             <a
               href="https://startbycks-teaktung.netlify.app/"
               class="link"
+              target="_blank"
               style="
                 background-color: rgb(0, 112, 74);
                 color: white;
@@ -367,7 +468,7 @@
             >
               <div class="add-link">
                 <span class="add-button">자세히 보기</span>
-                <a href="https://github.com/teakyungg/JS-03-2048-in-3lines"
+                <a href="https://github.com/teakyungg/JS-03-2048-in-3lines" target="_blank"
                   >GitHub 바로가기</a
                 >
               </div>
@@ -386,12 +487,13 @@
               2048
             </h2>
             <section class="tag">
-              <span>JavaScript</span><span>팀 프로젝트</span>
+              <span>JavaScript</span><span>TypeScript</span><span>팀 프로젝트</span>
             </section>
 
             <!-- 바로가기 -->
             <a
               href="https://3lines-2048.netlify.app/"
+              target="_blank"
               class="link"
               style="
                 background-color: rgb(168, 168, 168);
@@ -417,9 +519,7 @@
             >
               <div class="add-link">
                 <span class="add-button">자세히 보기</span>
-                <a href="https://github.com/teakyungg/Vision"
-                  >GitHub 바로가기</a
-                >
+                <a href="https://github.com/teakyungg/Vision" target="_blank">GitHub 바로가기</a>
               </div>
             </div>
           </figure>
@@ -441,6 +541,7 @@
             <!-- 바로가기 -->
             <a
               href="https://vision-karly.netlify.app/src/item/main"
+              target="_blank"
               class="link"
               style="
                 background-color: rgb(95, 0, 128);

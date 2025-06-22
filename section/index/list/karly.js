@@ -45,16 +45,6 @@ const exit_button = add_link.querySelector(".content > .exit-button");
 add_button.addEventListener("click", () => {
   add_link.style.display = "block";
   document.body.style.overflow = "hidden";
-
-  // 상단으로 부터 얼마나 떨어질껀지 정하는 값
-  const topOffset  = window.scrollY + (parseInt(getComputedStyle(add_link).height) / 3);
-  add_link.style.top = `${topOffset}px`;
-
-  const width = document.documentElement.clientWidth / 2;
-  add_link.style.left = `${
-    width - parseInt(getComputedStyle(add_link).width) / 2
-  }px`;
-
   nav.style.display = "none";
 });
 
