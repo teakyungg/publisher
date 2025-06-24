@@ -1,3 +1,4 @@
+@import "./font/font.css";
 @import "./pages/index/header/header.css";
 @import "./pages/index/intro/intro-message.css";
 @import "./pages/index/project/project.css";

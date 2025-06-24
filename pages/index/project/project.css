@@ -1,277 +1,135 @@
-@font-face {
-  font-family: "JSArirang-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+.project{
+    width: 75rem;
+    margin: 0 auto;
+    margin-bottom: 1.875rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
 }
 
-@font-face {
-  font-family: "Mungyeong-Gamhong-Apple";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Mungyeong-Gamhong-Apple.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
+/* 프로젝트 시작 타이틀 */
+.project > .title{
+    font-size: 1.5625rem;
+    padding-bottom: .9375rem;
+    border-bottom: .0625rem solid white;
 }
 
-@font-face {
-  font-family: "HSSummer";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSSummer.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+/* 프로젝트 컨테이너 */
+.project > .project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
 }
 
-.project {
-  width: 75rem;
-  padding: 3.125rem;
-  margin: 0 auto;
+/* 프로젝트 시작 박스 */
+.project > .project-container > .inner {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 6.25rem 1fr;
 
-  transform: translateY(-1.25rem);
+   column-gap: 3.125rem;
+   row-gap:  1.25rem;
 }
 
-.project > .title {
-  font-size: 1.5rem;
-  transform: translateY(-1.875rem);
-  padding-bottom: 1.25rem;
+/* 프로젝트 타이틀 */
+.project > .project-container > .inner > .project-title{
+    grid-column: 1/3;
+    grid-row: 1/2;
 
-  border-bottom: 0.0625rem solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3.125rem;
+    font-family: "RixYeoljeongdo_Regular";
+    
+
+    background-color: rgb(0, 112, 74);
 }
 
-.project > .inner {
-  display: flex;
-  flex-direction: column;
-  gap: 12.5rem;
-  margin-top: 1.25rem;
-}
-
-.project > .inner > .list {
-  display: flex;
-  gap: 1.25rem;
-
-  width: 100%;
-  height: 31.25rem;
-}
-
-.project > .inner > .right {
-  flex-direction: row-reverse;
-}
-
-.project > .inner > .list > .img {
-  height: 100%;
-  flex: 1;
-
-  box-sizing: border-box;
-}
-
-/* 프로젝트 메인 이미지 */
-.project > .inner > .list .project-img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 40rem;
-  height: 31.25rem;
-  border-radius: 1rem;
-}
-
-/* 메인 이미지 링크 박스 */
-.project > .inner > .list .project-img .add-link {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.445);
-
-  border-radius: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem;
-
-  transition: opacity 0.5s;
-}
-
-.project > .inner > .list:hover .project-img .add-link {
-  opacity: 1;
-}
-
-/* 메인 이미지 링크 */
-.project > .inner > .list .project-img .add-link span,
-.project > .inner > .list .project-img .add-link a {
-  color: white;
-  text-decoration: none;
-  border: 0.0625rem solid white;
-  padding: 0.9375rem;
-  margin: 0.3125rem;
-  transition: color 0.5s, background-color 0.5s;
-}
-
-/* 메인 이미지 링크 hover */
-.project > .inner > .list .project-img span:hover,
-.project > .inner > .list .project-img a:hover {
-  color: rgb(29, 32, 36);
-  background-color: white;
-}
-
-.project > .inner > .list > .txt {
-  flex: 1.7;
-}
-
-.project > .inner > .list > .info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  overflow: hidden;
-
-  flex: 1;
-}
-
-.project > .inner > .list > .info > .title {
-  font-size: 5rem;
-}
-
-.project > .inner > .list > .info > .tag {
-  display: flex;
-  gap: 0.625rem;
-}
-
-.project > .inner > .list > .info > .tag > span {
-  padding: 0.625rem;
-  border: 0.0625rem solid white;
-  border-radius: 1.125rem;
-
-  transition: background-color 0.25s, color 0.25s;
-}
-
-.project > .inner > .list > .info > .tag > span:hover {
-  background-color: white;
-  color: black;
-}
-
-/* 스타벅스 바로가기 버튼 */
-.project > .inner > .list > .info > .link {
-  width: 18.75rem;
-  height: 6.25rem;
-  margin: auto;
-  border-radius: 1rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3125rem;
-
-  text-decoration: none;
-  font-size: 1.375rem;
+.project > .project-container > .inner > .project-title *{
+    margin-top: .625rem;
 }
 
 
+/* 설명 박스 */
+.project > .project-container > .inner .project-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
 
-/* 자세히 보기 창 */
-.add-box {
-  width: 75rem;
-  height: 37.5rem;
-  background-color: rgb(240, 240, 240);
-
-  color: black;
-  overflow: auto;
-  display: none;
-
-  position: fixed;
-  top: 50%;
-  left: 50% ;
-  transform: translate(-50%,-50%);
-  z-index: 10;
-
-  /* 스크롤바 눈에 제거 부분(기능은 활성화) */
-
-  scrollbar-width: none; /* 스크롤바 두께 제거 (Firefox) */ 
-  scrollbar-color: transparent transparent; /* 혹시라도 보일 경우 대비 */
-  -ms-overflow-style: none;  /* (IE 10, 11) */
+    box-sizing: border-box;
 }
 
-/* 스크롤바 제거 */
-.add-box::-webkit-scrollbar {
-  display: none;
+/* 각각 요소 제목 */
+.project > .project-container > .inner .project-content .title{
+    padding-bottom: .9375rem;
 }
 
-.project > .inner > .list .add-button {
-  cursor: pointer;
+/* 태그 박스 */
+.project > .project-container > .inner .tag{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
 }
 
-/* 자세히 보기 제목*/
-.add-box .title-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3125rem;
-  height: 6.25rem;
-
-  background-color: lightgray;
-
-  align-items: center;
-  justify-content: center;
+/* 태그 */
+.project > .project-container > .inner .tag *{
+    border: .0625rem solid white;
+    border-radius: 1rem;
+    padding: .625rem;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.add-box .inner:last-child{
-  padding-bottom: 3.125rem;
+.project > .project-container > .inner .tag *:hover{
+    background-color: lightgray;
+    color: black;
 }
 
-.add-box .title {
-  font-size: 1.875rem;
+/* 각각 프로젝트 이미지 */
+.project > .project-container > .inner > .project-img{  
+    width: 40.625rem;
+    height: 100%;
+
+    position: relative;
 }
 
-.add-box .sub-title {
-  font-size: 1.5625rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: .625rem;
+/* 각각 프로젝트 바로가기 */
+.project > .project-container > .inner > .project-img > .site-link{
+
+    background-color: rgb(29, 32, 36);
+    padding: 1.25rem 2.5rem;
+    border-radius: 1rem;
+
+    text-decoration: none;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.add-box .sub-title .info-message{
-  font-size: 1rem;
+.project > .project-container > .inner > .project-img:hover > .site-link{
+    opacity: 1;
 }
 
+/* 프로젝트 이미지 페이드 */
+.project > .project-container > .inner > .project-img > .img-pade{
+    width: 100%;
+    height: 100%;
 
+    position: absolute;
+    top: 0;
 
-.add-box .inner {
-  width: 80%;
-  margin: 1.875rem auto;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
-.add-box .inner li {
-  list-style: inside;
-  padding: 0.1875rem;
+.project > .project-container > .inner > .project-img:hover > .img-pade{
+    opacity: 0.5;
 }
-
-.add-box > .content{
-  width: 100%;
-  height: 100%;
-
-  position: relative;
-}
-
-.add-box > .content > .exit-button{
-  position: absolute;
-  right: 1.25rem;
-  top: 1.25rem;
-
-  width: 29px;
-  aspect-ratio: 1/1;
-  border: .125rem solid black;
-  border-radius: 1rem;
-  
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.add-box > .content > .inner > details > p{
-  padding: .625rem 0;
-}
-
-.add-box > .content > .inner > details > summary{
-  background-color: lightgray;
-  margin: .3125rem 0;
-}
-
-

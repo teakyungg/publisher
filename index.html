@@ -6,344 +6,13 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./main.js"></script>
     <title>publisher</title>
   </head>
   <body>
-
-    <!-- 추가 박스 부분 내용 더 채우기 -->
-    
-    <!-- 스타벅스 추가 정보 -->
-    <div class="add-box starbucks-add-box">
-      <div class="content">
-
-        <!-- Exit-button -->
-        <div class="exit-button">
-         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </div>
-
-        <!-- Title -->
-        <section class="title-inner">
-          <h3 class="title">STARBUKCS</h3>
-          <span>1인 프로젝트</span>
-        </section>
-
-        <!-- 목표 -->
-        <section class="inner">
-          <h3 class="sub-title">목표</h3>
-          <p>
-            실제 스타벅스 홈페이지 수준에 근접한 결과물을 목표로 해당 프로젝트를
-            기획하고 진행하였습니다.
-          </p>
-        </section>
-
-        <!-- 주요 기능 및 특징 -->
-        <section class="inner">
-          <h3 class="sub-title">주요 기능 및 특징</h3>
-          <ul class="list">
-            <li>swpier를 이용한 슬라이더 구현</li>
-            <li>JavaScript를 이용한 동적 사이트</li>
-            <li>GSAP의 scrollTrigger를 기능을 사용한 반응형 웹 사이트</li>
-            <li>사용자 환경에 따라 유연하게 반응할 수 있도록 rem 단위를 사용하여 다양한 화면 크기를 고려한 레이아웃을 구성하였습니다.</li>
-          </ul>
-        </section>
-
-        <!-- 사용 기술 -->
-        <section class="inner">
-
-          <div class="sub-title">
-            <h3>사용 기술/Tool</h3>
-            <span class="info-message">항목을 누르면 자세히 볼 수 있습니다.</span>
-          </div>
-
-          <details>
-            <summary><span>➡️</span> vite</summary>
-            <p>개발 생산성과 성능 향상을 위해 Vite를 활용하여 실시간 반영 기능을 적용하고, 최종 빌드 시 경량화 및 최적화를 수행하였습니다.</p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> GSAP</summary>
-            <p>GSAP ScrollTrigger 기능을 활용하여 특정 스크롤 구간에 맞춰 애니메이션을 트리거하도록 구성하였습니다.</p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Swiper</summary>
-            <p>사용자 친화적인 슬라이더 인터페이스 구현을 위해 Swiper 라이브러리를 도입하여 효과적인 콘텐츠 전환을 구현하였습니다.</p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Lighthouse</summary>
-            <p>Lighthouse 분석 결과: 성능(90점), 접근성(86점), 권장사항(78점), 검색엔진 최적화(91점)</p>
-            <p>SEO 및 웹 표준 준수 여부를 확인하고, 전반적인 웹사이트 품질 향상을 위해 Lighthouse를 활용하였습니다.</p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Web Developer </summary>
-            <p>Web Developer의 HTML 유효성 검사 기능을 사용하여, 마크업 구조를 웹 표준에 맞게 구성하였습니다.</p>
-          </details>
-
-
-        </section>
-
-         <!-- 프로젝트 회고 -->
-        <section class="inner">
-          <h3 class="sub-title">프로젝트 회고</h3>
-
-          <details>
-            <summary><span>➡️</span> Swpier</summary>
-            <p> 
-            개인 프로젝트를 진행하던 중 캐러셀(Carousel) 기능이 필요한 부분이 있었고, 직접 구현하는 대신 더 효율적인 방법을 찾던 중 <br>
-            JavaScript 기반의 라이브러리인 Swiper를 알게 되어 도입하게 되었습니다. <br>
-            Swiper를 통해 캐러셀 기능을 손쉽게 구현할 수 있었고, 이를 통해 개발 시간을 크게 단축할 수 있었습니다. <br><br>
-
-            다만, 라이브러리를 사용할 때는 단순히 사용하는 것에 그치지 않고, <br>
-            해당 라이브러리가 어떻게 동작하는지 구조를 이해해야만 원하는 방식으로 수정하거나 확장할 수 있다는 점도 함께 깨달았습니다. <br><br>
-
-            이 경험을 통해 <strong>라이브러리의 편의성과 함께 구조에 대한 이해</strong>의 중요성을 깊이 느낄 수 있었습니다.
-
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> GSAP</summary>
-            <p> 
-             개인 프로젝트를 진행하면서 여러 애니메이션이 필요한 부분이 있었고, <br>
-             이를 모두 직접 구현하는 것은 비효율적이라 판단해 대안을 찾던 중 <strong>GSAP(GreenSock Animation Platform)</strong><br>
-             JavaScript 애니메이션 라이브러리를 발견하게 되었습니다. <br><br>
-
-             GSAP는 복잡한 애니메이션을 간단한 코드로 구현할 수 있을 뿐만 아니라, <br>
-             다양한 확장 플러그인을 통해 추가적인 기능도 손쉽게 적용할 수 있다는 점에서 큰 장점을 느꼈습니다. <br><br>
-
-             무엇보다 필요한 기능만 선택적으로 플러그인으로 불러올 수 있는 구조는 성능 최적화에도 도움이 될 수 있겠다는 점에서 인상 깊었습니다. <br>
-             이 경험을 통해 효율적인 개발과 최적화를 동시에 고려할 수 있는 라이브러리 선택의 중요성을 느낄 수 있었습니다.
-
-
-            </p>
-          </details>
-
-
-        </section>
-
-        
-      </div> 
-    </div>
-
-    <!-- 2048 추가 정보 -->
-    <div class="add-box game2048-add-box">
-      <div class="content">
-
-        <!-- Exit-button -->
-        <div class="exit-button">
-         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </div>
-
-        <!-- Title -->
-        <section class="title-inner">
-          <h3 class="title">2048</h3>
-          <span>팀 프로젝트</span>
-        </section>
-
-        <!-- 목표 -->
-        <section class="inner">
-          <h3 class="sub-title">목표</h3>
-          <p>
-            자바스크립트 역량을 강화하고, Git과 GitHub을 활용한 팀 협업 경험을 쌓기 위해 진행한 프로젝트입니다.
-          </p>
-        </section>
-
-        <!-- 주요 기능 및 특징 -->
-        <section class="inner">
-          <h3 class="sub-title">주요 기능 및 특징</h3>
-          <ul class="list">
-            <li>바닐라 JavaScript만을 활용하여 게임 구현</li>
-            <li>기본, 타임어택, 하드, AI 등 다양한 게임 모드 제공</li>
-            <li>웹 페이지의 모든 로직을 직접 설계 및 개발</li>
-            <li>Git 및 GitHub를 활용한 체계적인 팀 프로젝트 관리</li>
-            <li>불필요한 페이지 이동 없이 하나의 페이지에서 모든 기능 제공, 성능 향상에 기여</li>
-          </ul>
-        </section>
-
-        <!-- 사용 기술 -->
-        <section class="inner">
-          <div class="sub-title">
-            <h3>사용 기술/Tool</h3>
-            <span class="info-message">항목을 누르면 자세히 볼 수 있습니다.</span>
-          </div>
-
-          <details>
-            <summary><span>➡️</span> vite</summary>
-            <p>
-              개발 생산성과 성능 향상을 위해 Vite를 활용하여 실시간 반영 기능을
-              적용하고, 최종 빌드 시 경량화 및 최적화를 수행하였습니다.
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Lighthouse</summary>
-            <p>Lighthouse 분석 결과: 성능(86점), 접근성(100점), 권장사항(100점), 검색엔진 최적화(90점)</p>
-            <p>SEO 및 웹 표준 준수 여부를 확인하고, 전반적인 웹사이트 품질 향상을 위해 Lighthouse를 활용하였습니다.</p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Web Developer </summary>
-            <p>Web Developer의 HTML 유효성 검사 기능을 사용하여, 마크업 구조를 웹 표준에 맞게 구성하였습니다.</p>
-          </details>
-
-        </section>
-
-        <!-- 프로젝트 회고 -->
-        <section class="inner">
-          <h3 class="sub-title">프로젝트 회고</h3>
-
-          <details>
-            <summary><span>➡️</span> 공용 함수 제작</summary>
-            <p> 
-             팀 프로젝트를 진행하면서 역할을 나누어 작업했지만, 완료 후 확인해보니 유사한 기능의 함수들을 각자 따로 구현한 중복이 발생했습니다. <br>
-             작업에 들어가기 전, 보다 구체적인 회의를 통해 <strong>공통 함수들을 먼저 설계하고 공유</strong>하고 공유했더라면, <br>
-             중복 없이 더 효율적인 개발이 가능했을 것이라 생각했습니다. <br><br>
-
-             프로젝트를 통해 작업 전 충분한 논의와 설계 과정을 거치는 것이 개발 효율성과 완성도에 있어 매우 중요하다는 점을 깨달았습니다.
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> GitHub Merge</summary>
-            <p> 
-             팀 프로젝트 진행 중 GitHub에서 머지를 수행하던 중 충돌이 발생했고, <br>
-             이를 충분히 확인하지 않은 채 병합을 진행해 제가 작업한 일부 내용이 유실되는 경험을 했습니다. <br><br>
-
-            이 경험을 통해 <strong>Merge 충돌 시 변경 사항을 정확히 확인</strong>하고 신중하게 처리하는 것의 중요성을 깊이 느꼈습니다.
-            </p>
-          </details>
-
-        </section>
-
-      </div> 
-    </div>
-
-    <!-- karly 추가 정보 -->
-    <div class="add-box karly-add-box">
-      <div class="content">
-
-        <!-- Exit-button -->
-        <div class="exit-button">
-         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </div>
-
-        <!-- Title -->
-        <section class="title-inner">
-          <h3 class="title">karly</h3>
-          <span>팀 프로젝트</span>
-        </section>
-
-        <!-- 목표 -->
-        <section class="inner">
-          <h3 class="sub-title">목표</h3>
-          <p>
-            컬리(Karly)의 실제 웹사이트를 클론하여 UI 및 기능을 구현한 프로젝트입니다. <br>
-            HTML, CSS를 이용한 UI 구성에 집중한 프로젝트 입니다.
-          </p>
-        </section>
-
-        <!-- 주요 기능 및 특징 -->
-        <section class="inner">
-          <h3 class="sub-title">주요 기능 및 특징</h3>
-          <ul class="list">
-            <li>디바이스 해상도에 따라 UI가 동적으로 조정되어 일관된 사용자 경험을 제공하도록 설계하였습니다.</li>
-            <li>모바일 환경에서도 원활하게 작동하도록 반응형으로 설계하였습니다.</li>
-            <li>사용자 환경에 따라 유연하게 반응할 수 있도록 rem 단위를 사용하여 다양한 화면 크기를 고려한 레이아웃을 구성하였습니다.</li>
-            <li>UI 요소를 컴포넌트화하여 역할을 명확히 분담하고, 작업 충돌 없이 효율적인 협업을 구현하였습니다.</li>
-          </ul>
-        </section>
-
-        <!-- 사용 기술 -->
-        <section class="inner">
-          <h3 class="sub-title">사용 기술</h3>
-
-          <details>
-            <summary><span>➡️</span> vite</summary>
-            <p>
-              개발 생산성과 성능 향상을 위해 Vite를 활용하여 실시간 반영 기능을
-              적용하고, 최종 빌드 시 경량화 및 최적화를 수행하였습니다.
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Semantic HTML elements</summary>
-            <p>
-              웹 접근성과 유지보수성을 고려하여 HTML5의 시맨틱 태그를 적극 활용하였습니다.
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Tailwind CSS</summary>
-            <p>
-              디자인 시스템의 일관성과 유지보수 효율성을 높이기 위해 Tailwind CSS를 적용하였습니다.
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Lighthouse</summary>
-            <p>Lighthouse 분석 결과: 성능(100점), 접근성(90점), 권장사항(100점), 검색엔진 최적화(91점)</p>
-            <p>SEO 및 웹 표준 준수 여부를 확인하고, 전반적인 웹사이트 품질 향상을 위해 Lighthouse를 활용하였습니다.</p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> Web Developer </summary>
-            <p>Web Developer의 HTML 유효성 검사 기능을 사용하여, 마크업 구조를 웹 표준에 맞게 구성하였습니다.</p>
-          </details>
-
-          
-
-        </section>
-
-        <!-- 프로젝트 회고 -->
-        <section class="inner">
-          <h3 class="sub-title">프로젝트 회고</h3>
-
-          <details>
-            <summary><span>➡️</span> Git Commit</summary>
-            <p> 
-              팀 프로젝트를 진행하면서 커밋 메시지에 한글과 영어가 혼용되어 사용되어 통일성이 부족했고, <br>
-              이로 인해 각 커밋의 내용을 명확히 파악하기 어려운 점이 있었습니다. <br><br>
-              커밋 메시지 작성 규칙 및 <strong>통일성</strong>의 중요성을 느끼는 계기가 되었습니다. 
-            </p>
-          </details>
-
-          <details>
-            <summary><span>➡️</span> 공용 color CSS 작성</summary>
-            <p> 
-              프로젝트 진행 시 공통으로 사용하는 색상을 일일이 찾아 직접 입력하는 비효율적인 작업이 있었습니다. <br><br>
-              이를 개선하기 위해 공통 색상을 :root에 CSS 변수로 선언한 별도의 CSS 파일을 생성하고, <br>
-              이를 다른 CSS에서 <strong>@import하여</strong> 사용하는 방식을 선택했다면 보다 효율적인 작업이 가능했을 것이라 생각했습니다.
-            </p>
-          </details>
-
-
-          <details>
-            <summary><span>➡️</span> Tailwind CSS 편의성</summary>
-            <p> 
-              Tailwind CSS를 사용하면서 가장 인상 깊었던 점은 직관적이고 일관된 클래스 네이밍이었습니다. <br>
-              정해진 규칙에 따라 요소별로 명확한 기준을 적용할 수 있어, 스타일 작업의 혼란을 줄이고 개발 시간을 단축하는 데 큰 도움이 되었습니다. <br><br>
-
-              이 과정을 통해 Tailwind CSS의 높은 편의성을 체감할 수 있었으며, <br>
-              변수명이나 커밋 메시지 등 모든 이름을 <strong>직관적이고 일관되게 작성하는 것</strong>의 중요성도 함께 느낄 수 있었습니다.
-            </p>
-          </details>
-
-          
-          
-
-        </section>
-      </div> 
-    </div>
-
 
     <!-- 네비게이션  -->
     <nav>
@@ -357,24 +26,25 @@
 
     <!-- 헤더 -->
     <header>
-      <h1 class="sr-only">Title</h1>
 
-      <p class="name">KTK</p>
+      <span class="name">KTK</span>
 
-      <section class="inner">
+      <div class="inner">
         <div class="title">
           <p class="publisher"></p>
           <p class="portfolio">Portfolio</p>
         </div>
-      </section>
+      </div>
+
     </header>
 
     <!-- 목표 -->
     <section class="intro-message">
-      <h1 class="sr-only">studyGoal</h1>
+
+      <h2 class="sr-only">목표</h2>
 
       <div class="inner">
-        <h2 class="intro-title">목표</h2>
+        <span class="intro-title">목표</span>
         <hr class="hr-line" />
 
         <div class="intro-txt">
@@ -396,182 +66,120 @@
           <span class="slogan-txt">Learning</span>
           <span class="slogan-txt">Growing</span>
         </div>
+
       </div>
+
     </section>
 
     <!-- 프로젝트 -->
     <section class="project">
+
       <h1 class="title">PROJECT</h1>
 
-      <div class="inner">
+      <!-- 프로젝트 컨테이너 -->
+      <div class="project-container">
 
-        <!-- 스타벅스 -->  <!-- 이 부분 싹다 뜯어서 고치기 태그 부분에 html 제목으로 넣고 설계 어떻게 했는지 css에서 반응형은 어떻게 구현하고 
-         자바스크립트는 어떻게 썼는 쓰기 -->
-        <div class="list starbucks">
-          <figure class="img">
-            <h2 class="sr-only">STARBUCSK img</h2>
-            <figcaption class="sr-only">스타벅스 클론</figcaption>
+        <!-- 스타벅스 -->
+        <section class="inner">
 
-            <div
-              class="project-img"
-              style="background-image: url(./img/starbucks.png)"
-            >
-              <div class="add-link">
-                <span class="add-button">자세히 보기</span>
-                <a href="https://github.com/teakyungg/Starbucks" target="_blank"
-                  >GitHub 바로가기</a
-                >
-              </div>
-            </div>
+          <!-- 프로젝트 타이틀 -->
+          <h2 class="project-title">
+            <span>STARBUCKS</span>
+          </h2>
+
+          <!-- 프로젝트 이미지 -->
+          <figure class="project-img">
+
+            <figcaption class="sr-only">스타벅스 클론 이미지</figcaption>
+
+            <img src="./img/starbucks.png" alt="스타벅스 클론 이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+
+            <div class="img-pade"></div>
+
+            <a class="site-link" href="https://startbycks-teaktung.netlify.app/" target="_blank">바로가기</a>
+
           </figure>
 
-          <div class="info">
-            <!-- 제목 -->
-            <h2
-              class="title"
-              style="
-                color: rgb(0, 112, 74);
-                font-family: 'Mungyeong-Gamhong-Apple', sans-serif;
-                font-size: 4.0625rem;
-              "
-            >
-              STARBUCKS
-            </h2>
+          <!-- 프로젝트 설명 -->
+          <div class="project-content">
 
-            <!-- 관련 태그 -->
-            <section class="tag">
-              <span>GASP</span><span>Swiper</span><span>JavaScript</span
-              ><span>개인 프로젝트</span>
-            </section>
+            <!-- HTML 구조 및 SEO 부분 설명 -->
+            <section class="html-description">
 
-            <!-- 바로가기 -->
-            <a
-              href="https://startbycks-teaktung.netlify.app/"
-              class="link"
-              target="_blank"
-              style="
-                background-color: rgb(0, 112, 74);
-                color: white;
-                font-family: Mungyeong-Gamhong-Apple, sans-serif;
-              "
-            >
-              <span class="startbucks_txt">GO TO STARBUCKS</span>
-            </a>
-          </div>
-        </div>
+              <h3 class="title">HTML</h3>
 
-        <!-- 2048 -->
-        <div class="list right game_2048">
-          <figure class="img">
-            <figcaption class="sr-only">2048 게임</figcaption>
-            <div
-              class="project-img"
-              style="background-image: url(./img/game_2048.png)"
-            >
-              <div class="add-link">
-                <span class="add-button">자세히 보기</span>
-                <a href="https://github.com/teakyungg/JS-03-2048-in-3lines" target="_blank"
-                  >GitHub 바로가기</a
-                >
+              <div class="tag">
+                <span>header</span>
+                <span>inner img</span>
+                <span>notice</span>
+                <span>promotion click</span>
+                <span>aside</span>
+                <span>up button</span>
               </div>
-            </div>
-          </figure>
 
-          <div class="info">
-            <h2
-              class="title"
-              style="
-                color: rgb(168, 168, 168);
-                font-family: 'HSSummer', sans-serif;
-                height: 6.25rem;
-              "
-            >
-              2048
-            </h2>
-            <section class="tag">
-              <span>JavaScript</span><span>TypeScript</span><span>팀 프로젝트</span>
+              <!-- 새로운 페이지에서 사진 첨부해서 설명하기 -->
+
             </section>
 
-            <!-- 바로가기 -->
-            <a
-              href="https://3lines-2048.netlify.app/"
-              target="_blank"
-              class="link"
-              style="
-                background-color: rgb(168, 168, 168);
-                color: #2c3e50;
-                font-family: 'HSSummer', sans-serif;
-                font-size: 2.8125rem;
-              "
-            >
-              <span class="2048_txt" style="margin-top: 1.875rem"
-                >GO TO 2048</span
-              >
-            </a>
-          </div>
-        </div>
+            <!-- CSS 설명 및 반응형 구현 부분 설명하기 -->
+            <section class="css-description">
 
-        <!-- karly -->
-        <div class="list karly">
-          <figure class="img">
-            <figcaption class="sr-only">karly 클론</figcaption>
-            <div
-              class="project-img"
-              style="background-image: url(./img/karly.png)"
-            >
-              <div class="add-link">
-                <span class="add-button">자세히 보기</span>
-                <a href="https://github.com/teakyungg/Vision" target="_blank">GitHub 바로가기</a>
+              <h3 class="title">CSS</h3>
+
+              <div class="tag">
+                <span>반응형</span>
               </div>
-            </div>
-          </figure>
 
-          <div class="info">
-            <h2
-              class="title"
-              style="
-                color: rgb(95, 0, 128);
-                font-family: 'JSArirang-Regular', sans-serif;
-              "
-            >
-              Karly
-            </h2>
-            <section class="tag">
-              <span>JavaScript</span><span>팀 프로젝트</span><span>SEO</span><span>Tailwind CSS</span>
             </section>
 
-            <!-- 바로가기 -->
-            <a
-              href="https://vision-karly.netlify.app/src/item/main"
-              target="_blank"
-              class="link"
-              style="
-                background-color: rgb(95, 0, 128);
-                color: white;
-                font-family: 'JSArirang-Regular', sans-serif;
-                font-size: 35px;
-              "
-            >
-              <span class="startbucks_txt">GO TO Karly</span>
-            </a>
+            <!-- JavaScripts 부분 사용 부분 설명하기 -->
+            <section class="javascript-description">
+
+              <h3 class="title">JavaScript</h3>
+
+              <div class="tag">
+                <span>GSAP</span>
+                <span>Swiper</span>
+              </div>
+
+            </section>
+
+            <!-- 기타 부분 설명하기 -->
+            <section class="sub-description">
+
+              <h3 class="title">기타</h3>
+
+              <div class="tag">
+                <span>Git</span>
+                <span>GitHub</span>
+              </div>
+
+            </section>
+
           </div>
-        </div>
+
+        </section>        
 
       </div>
+
+      
+
     </section>
 
     <!-- 연락처 -->
     <footer>
-      <div class="inner">
-        <h2 class="title">CONTENT</h2>
 
-        <div class="content">
+      <div class="inner">
+
+        <ul class="content">
           <li class="name">KIM TEAK KYUNG</li>
           <li class="phone">Tel : 010-7176-6453</li>
           <li class="email">Email : rlaxorud8532@gmail.com</li>
           <li class="github">GitHub : https://github.com/teakyungg</li>
-        </div>
+
+        </ul>
       </div>
+
     </footer>
 
   </body>
