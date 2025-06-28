@@ -25,10 +25,10 @@
 /* 프로젝트 시작 박스 */
 .project > .project-container > .inner {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1.5fr 1fr;
    grid-template-rows: 6.25rem 1fr;
 
-   column-gap: 3.125rem;
+   column-gap: 30px;
    row-gap:  1.25rem;
 }
 
@@ -71,7 +71,7 @@
 .project > .project-container > .inner .tag{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 10px;
 }
 
 /* 태그 */
@@ -79,6 +79,10 @@
     border: .0625rem solid white;
     border-radius: 1rem;
     padding: .625rem;
+
+    color: white;
+    text-decoration: none;
+
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -89,9 +93,7 @@
 
 /* 각각 프로젝트 이미지 */
 .project > .project-container > .inner > .project-img{  
-    width: 40.625rem;
     height: 100%;
-
     position: relative;
 }
 
